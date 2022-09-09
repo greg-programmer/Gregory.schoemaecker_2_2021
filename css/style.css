@@ -1,0 +1,1615 @@
+   /*GENERALE*/
+ *
+    {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;       
+    }   
+
+li
+    {
+        list-style: none;
+    }
+a
+    {
+        text-decoration: none;
+        color: black;
+        font-family: 'Raleway', sans-serif;  
+        height: auto;
+        width: auto;
+    } 
+h1
+    {
+        font-family:'Raleway', sans-serif;
+        font-size:18px;
+        font-weight: bold;    
+        margin: 35px 0 12px 0;
+    }
+h2
+    {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;    
+        font-weight:lighter; 
+        margin-bottom: 12px;
+    }
+h3
+{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+}
+h4
+    {
+        font-family:'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: initial;
+        margin: 6px;
+    }
+h5
+    {
+    padding: 0 0 0 2%;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;   
+    }
+p
+    {
+        font-family: 'Raleway', sans-serif;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        margin-left: 6px ;
+        margin-bottom: 10px;
+    }
+.start 
+    {    
+        margin: 0 auto 6px 6px ;  
+        width: 73px;  
+    }
+.start i
+    {
+        font-size: 10px;
+    }
+.delete-text
+    {
+        border:none;
+    }
+span
+    {
+    font-weight: bolder;  
+    }
+span i
+    {
+    color: #d9d9d9;
+    } 
+/*Le bloque qui contient la page*/
+.bloc-page
+    {
+        width: 80%;
+        margin:auto ;        
+    } 
+/*LA SECTION HEADER*/           
+/*--La barre de navigation + logo( standard)*/
+#navigation
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+    }
+#logo-desktop
+    {   
+        display: flex;
+        align-items: center;
+        width:80px;
+        height: auto;
+        margin-left: 1%;
+    }
+#logo-center
+    {
+        display: none;
+    }
+nav ul  
+    {
+        display: flex;
+        margin:0 auto 0 8%;
+    }
+nav ul li
+    {
+        padding-right:50px; 
+        font-family: 'Raleway', sans-serif;
+    }
+nav ul li .survole 
+    {
+        color: black;
+        padding: 41px 16px 0 16px;
+        font-weight: bold;
+    }
+.survole:hover
+    {
+        color:#0065fc;
+        border-top:3px solid #0065fc;
+    }
+#navigation-tel
+    {
+        display: none;
+    }
+/*LA SECTION FILTRES*/    
+/* Le titre h1 + le sous-titre h2 */  
+#hebergement
+    {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+/*La barre de recherche*/
+.search
+    {
+        display: flex;
+        width: 234px;
+        height: 38px;
+        border:1px #F2F2F2 solid ;
+        border-radius: 10px 0 0 10px;
+        position: relative;
+    }
+.blue-search 
+    {
+        height: 38px;
+        width: 110px;
+        background-color:#0065fc;
+        border-radius:0px 10px 10px 0;
+        position: absolute;
+        text-align: center;
+        left: 150px;
+        color: white;
+        padding: 10px;
+        left: 220px;
+    }
+.search i
+    {
+        display:none;
+    }
+#form-center
+    {
+        position: relative;
+        margin: auto ;
+        height: auto;    
+    }
+#container-logo
+    {
+        background-color:#F2F2F2 ;
+        border-radius: 10px 0 0 10px;
+        height: inherit;
+        width: 52px;
+        position: relative;
+        right: 1px;
+        bottom: 1px;
+    }
+.delete-text
+    {
+    font-weight: bold;
+    font-size: 14px;  
+    font-family: 'Raleway', sans-serif; 
+    margin-left: 10px;
+    }
+input::-webkit-input-placeholder 
+    {
+        color:black;
+    }
+#h4-search
+    {
+        margin: auto;
+    }
+#plus-de-500
+    {
+        display: flex;    
+    }
+#filtre_search
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+#hebergement_search
+    {
+    display: flex;
+    }
+.search #logo-search
+    {    
+    width: 20px;
+    height: auto;
+    position: absolute;
+    margin: 8px 15px; 
+    }   
+input
+    {
+    border: 0;
+    outline: none;   
+    }
+/*Le bloc qui contient les filtres*/
+#bloc-filtres
+    {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 24px 0;
+    }    
+/*Filtre*/
+.bouton1
+    {
+    display: flex;
+        align-items: center;
+        width: 155px;
+        height: 40px;
+        border-top: 2px #d9d9d9 solid;
+        border-right: 2px #d9d9d9 solid;
+        border-bottom: 2px #d9d9d9 solid;
+        border-radius:30px 30px 30px  30px;        
+    }
+.bouton2
+    {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        height: 40px;
+        border-top: 2px #d9d9d9 solid;
+        border-right: 2px #d9d9d9 solid;
+        border-bottom: 2px #d9d9d9 solid;
+        border-radius:30px 30px 30px  30px;    
+    }
+.bouton3
+    {
+        display: flex;
+        align-items: center;
+        width: 160px;
+        height: 40px;
+        border-top: 2px #d9d9d9 solid;
+        border-right: 2px #d9d9d9 solid;
+        border-bottom: 2px #d9d9d9 solid;
+        border-radius:30px 30px 30px  30px;    
+    }
+.bouton4
+    {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        border-top: 2px #d9d9d9 solid;
+        border-right: 2px #d9d9d9 solid;
+        border-bottom: 2px #d9d9d9 solid;
+        border-radius:30px 30px 30px  30px;
+    }
+    .bouton1, .bouton2, .bouton3, .bouton4 
+    {   
+        margin-left: 18px;   
+    }
+    .titre-filtre
+    {
+        padding-left: 6%;
+    }
+    .bouton1:hover
+    {
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .bouton2:hover
+    {
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .bouton3:hover
+    {
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .bouton4:hover
+    {
+        background-color: #DEEBFF;
+        border: none;
+    }
+    .rond-bleu
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height:40px;
+        background-color: burlywood;
+        border-radius: 30px;
+        background-color:#DEEBFF ;
+        padding: 2px;
+    }
+    #rond-bleu-eco
+    {
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height:40px;
+    background-color: burlywood;
+    border-radius: 30px;
+    background-color:#DEEBFF ;
+    padding: 10px;    
+    }
+    i
+    {
+        color:#0065FC;
+        font-size: medium;
+    }
+    .titre-filtre
+    {
+    display: flex;
+    color: black;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    }    
+/* Le p de plus de 500 logements + logo...*/    
+    #p500-logements
+    {
+        margin-bottom: 28px;
+    } 
+/*LA SECTION HEBERGEMENT */
+    #section-hebergement
+    {
+        height: auto;
+        width: 100%;
+        display: flex;  
+        margin: auto; 
+        justify-content: space-between;
+    }
+    #hebergement-Marseille
+    {
+        width: 65%;
+        height: 100%;
+        background-color: #F2F2F2;
+        border-radius: 20px;       
+    }
+    #hebergement-Marseille h3
+    {
+        margin: 35px auto 15px 9%; 
+        display: flex;
+        width: 219px;
+    }
+/*le bloc qui contients toutes les cartes d'hebergements*/
+    .cart-hebergements
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 87%;
+        margin: auto;    
+    }
+/*Le contenant1 est une class qui est utilisé pour les 6 cartes (Hebergement) */ 
+    .contenant1
+    {
+        display: flex;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 6px #d9d9d9; 
+        position: relative;
+        height: 186px;
+        width: 222px;
+        overflow: hidden;                        
+    } 
+/*La balise figure est utilisé pour les 6 cartes(Hebergement)*/
+    figure 
+    {
+        border: 4px white solid;
+        background-color: white;
+        border-radius: 20px ;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;    
+        height:inherit;
+        overflow: hidden;
+        height: 100%;
+        position: absolute;
+    }    
+    /*La partie figcaption (Hebergement à Marseille)*/   
+    .fig-vignette-1
+    {
+        color:black;
+        padding: 3px;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        width: 100%; 
+    }
+/*Cette class prend en charge les 3 premières images(Hebergement)*/
+    .img-vignette1
+    {        
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        bottom:20px;
+    }
+ /*Cette class prend en charge les 3 premières images(Hebergement)*/
+ .img-vignette-2
+    {         
+        position: relative;
+        bottom: 33px;
+    }   
+/*Permet de déplacer l'image 4(Hebergement)*/
+    .img-vignette 
+    {        
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        bottom:42px;
+    }
+ /*Permet de déplacer l'image (Le panier)*/
+  .img-vignette-panier
+  {
+        max-width: 220px;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        bottom: 20px;
+  }
+/*Permet de déplacer l'image 6(Hebergement)*/
+.img-vignette4
+    {
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        bottom:112px;
+        width: 100%;
+    }
+/*ASIDE*/ 
+/*Div qui contient le titre h3 + icône "les plus populaires */
+   .h3-lespluspopulaires
+   {
+       width: 284px;
+       display: flex;
+       margin: 35px auto 15px 19%;         
+   } 
+   .h3-lespluspopulaires i
+   {
+        color: black;
+        margin:4px auto 4px auto;
+   }
+/*La partie "Les plus populaires"*/    
+/*Le titre h3 + h4*/   
+    #les-plus-populaires h3
+    {
+        margin: 30px 10%;
+    }
+    #Plus-populaire
+    {
+        width: 30%;
+        height: auto;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 20px;
+        align-content: flex-start;                   
+    } 
+    #afficher-h4
+    {
+        width: 90px;
+        margin: 0 0 35px 10%;
+    }
+    .lien2
+    {
+        display: contents;
+    }
+/*Le bloc qui contient toutes les cartes(Les plus populaires)*/
+    .cart-plus
+    {
+        display: flex;
+        justify-content: center;
+        width: 96%;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: auto;          
+    }     
+/*Carte 1*/
+   .contenant2
+   {
+       height: 150px;
+       width: 300px;       
+   }
+   .fig-2p
+   {
+       height: 138px;
+       width: 300px;
+       flex-direction: row-reverse;
+       box-shadow: 2px 2px 6px #d9d9d9
+   }  
+   .fig-2p .img-vignette-1p
+   {
+       position:relative;
+       right: 120px;
+   } 
+   .fig-vignette-1p
+    {
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 55%;
+    }
+   .start-decal
+   {
+       margin: 40px auto auto 6px;
+   }
+   .start-decal i
+   {
+       font-size: 10px;      
+   }
+   .fig-vignette-1p, .h4p, .p-p ,.start-decal
+   {
+       margin-left: 15px;
+   }
+   .fig-2p .fig-vignette-1p .h4-p
+   {
+        font-family:'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: initial;
+        margin: 14px auto auto 15px;
+   }
+   .p-p
+   {
+        margin-top: 5px;
+   }   
+   /*Carte 2*/
+   .img-vignette-2p
+   {
+       position: relative;
+       right: 139px;
+   }
+   /*Carte 3*/
+   .img-vignette-3p
+   {
+       position: relative;
+       right: 161px;
+       width: auto;
+       height: 196px;
+       bottom: 31px;
+   }
+   
+/*LA SECTION ACTIVITE MARSEILLE*/
+    #Activites-Marseille
+    {
+        width: 100%;
+        height: auto;  
+        margin: auto;    
+    }    
+/*Div qui contient le titre h3*/   
+    .boiteh3-activites-Marseille
+    {
+        display: flex;
+        width: 200px;
+        margin: 50px 0 15px 0;
+    }
+/*Titre h3*/    
+    .h3-activites-Marseille
+    {
+        width: 172px;
+        position: relative;        
+    }
+/*La div qui contient toutes les photos*/    
+   .boite-des-photos
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }   
+/*La class div qui contient une photo chacune*/
+/*Vieux Port et Calanques*/
+    .unephoto
+    {
+        display: flex;
+        width: 255px;
+    }
+/*La class figure pour ces deux cartes*/
+    .parc-port
+    {
+        display: flex; 
+        border: none; 
+        background-color: white;
+        border-radius: 20px ;
+        flex-flow: column;
+        width: 272px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        height:385px;
+        box-shadow: 2px 2px 6px #d9d9d9;     
+    }
+/*La class image pour ces deux cartes*/
+    .img-parc-port
+    {
+        width: 528px;
+        height: auto;
+        position: relative;
+        right: 144px;
+    }
+/*La class figcaption + h4 pour ces deux cartes*/
+    .fig-parc-port
+    {
+        position: absolute;
+        background-color: white;
+        bottom:0;  
+        width: 100%;          
+    }
+    .h4-figcaption
+    {
+        margin: 16px;
+    }
+
+/*La class div qui contient deux div photos*/
+    .deuxphotos
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 385px;        
+    }    
+/*Une class div pour isoler ces deux cartes*/
+/*Notre-dame...et Parc Longchamp */
+    .deuxphotos-bis
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        height: 385px;              
+    }   
+/*Une class div pour la carte*/
+/* Notre-Dame...*/
+    .photo-1
+    {
+        display: flex;
+        box-shadow: 2px 2px 6px #d9d9d9;
+        border-radius: 20px;
+        height: 175px;
+        width: 255px;
+        position: relative;
+        overflow: hidden;
+    }
+   /*Une class div pour la carte*/
+/* Fort...*/
+    .photo-1-fort
+    {
+        box-shadow: 2px 2px 3px #d9d9d9;
+        border-radius: 20px;
+        height: 194px;
+        width: 255px;
+        position: absolute;
+        overflow: hidden;
+    }    
+/*Une class div pour pour la carte*/
+/*Iles du Frioul*/
+    .photo-2b
+    {
+        display: flex;
+        box-shadow: 2px 2px 6px #d9d9d9;
+        border-radius: 20px; 
+        height: 141px; 
+        width: 255px;
+        position: relative;
+        overflow: hidden;         
+    }
+/*Une class div pour pour la carte*/
+/*Parc Longchamp*/
+    .photo-2c
+    {
+        display: flex;
+        box-shadow: 2px 2px 3px grey;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 180px;
+    }
+/*La class figure*/
+/*Notre Dame ...*/
+.fort-dame
+    {
+        display: flex;
+        width: 272px;
+        border: none;
+        height: inherit;    
+    }   
+/*Fort de Pomègue*/
+    .fort-fig
+    {
+        height: 100%;
+        width: 100%;
+        border:none;
+    }
+/*Iles du frioul*/
+.fort-dame2b
+    {
+        display: flex;
+        width: 276px;
+        border: none;
+        height: inherit;
+    }
+/*Parc Longchamp*/
+.fort-dame3c
+    {
+        border: none;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-flow: column;
+        width: 272px;
+        margin: auto;
+        position: relative;
+        height: auto;
+    }
+/*La class image*/
+/*Fort de Pomègues*/
+    .img-fort-dame
+    {
+        width:276px;
+        height: auto;
+        position: relative;
+        bottom: 130px;
+    }
+/*Iles du Frioul*/
+    .img-fort-dame2b
+    {
+        height: auto;
+        position: relative;
+        bottom: 24px;
+    }
+/*Parc longchamp*/
+    .img-fort-dame3c
+    {
+        position: relative;
+        bottom: 32px;
+    }    
+/*La class figcaption*/
+/*Fort de Pomègues*/
+   .fig-fort-dame
+   {
+       color: black;
+       padding: 3px;
+       text-align: center;
+       background-color: white;
+       position: relative;
+       bottom: 254px;   
+       border: none; 
+   }        
+/*Iles du Frioul*/
+   .fig-fort-dame2b
+   {
+       color: black;
+       background-color: white;
+       position: relative;
+       bottom: 74px;   
+       border: none;
+    }
+/*Notre-Dame ...*/
+   .fig-fort-dame2c
+   {
+       color: black;
+       background-color: white;
+       position: absolute;
+       bottom: 0; 
+       width: 100%;     
+   }
+/*Parc longchamp*/
+   .fig-fort-dame3c
+   {
+       color: black;
+       padding: 3px;
+       text-align: center;
+       background-color: white;
+       position: relative;
+       bottom: 58px;
+       border: none;
+   }    
+/*LE FOOTER*/
+    footer
+    {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 180px;
+        align-items: center;
+        margin-top: 50px;
+    } 
+    .bloc-boite
+    {
+        width: 80%;
+        display: flex;
+    }
+    .boite 
+    {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+/*------XL DESKTOPS-------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width:1200px) and (max-width:1500px)
+{
+    .bloc-page
+    {
+        width: 92%;
+        margin: auto;
+    }
+    .cart-hebergements
+    {
+        width: 93%;
+    }
+    #hebergement-Marseille
+    {
+        width: 67%;
+    }
+    .deuxphotos
+    {
+        margin: 0 1%;
+    }
+    .deuxphotos-bis
+    {
+        margin: 0 1%;
+    }   
+    .bloc-boite
+    {
+        width: 92%;
+        display: flex;
+    }
+}
+/*Ipad pro* 1028px*/
+@media all and (min-width:993px) and (max-width: 1199.98px)
+{
+  .bloc-page
+  {
+      width: 90%;
+      margin: auto;
+  }
+  #section-hebergement
+  {
+      width: 100%;
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      flex-direction: row;
+  }
+  #hebergement-Marseille
+  {
+      width: 58%;
+      margin: auto;
+  }
+  #hebergement-Marseille h3
+  {
+      margin-left: 4%;
+  }
+  .cart-hebergements
+  {
+      width: 100%;
+  }
+  #Plus-populaire
+  {
+      width: 40%;
+      height: 550px;     
+  }
+  .h3-lespluspopulaires
+  {
+      margin-left: 10%;
+  }
+  .boite-des-photos
+  {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: auto;   
+      width: 100%;
+  }
+  .deuxphotos-bis
+  {
+      flex-direction: row;
+      width: 100%;
+      margin-top: 30px;
+      height: 240px;
+  }
+  .photo-1
+  {
+      width: 400px;
+      height: 240px;
+  }
+  .fort-dame
+  {
+      width: 100%;
+  }  
+  .cart-plus
+  {
+      justify-content: space-around;
+      width: 100%;
+  }
+  .bloc-boite
+  {
+      width: 90%;
+      display: flex;
+  }
+  .boite
+  {
+      width: 85%;
+  }
+}
+/*------MEDIUM-------------------------------------------------------------------------------------------------------------*/
+/*Extra large devices (tablette, 992px)*/
+@media all and (min-width:769px) and (max-width:992px)
+{
+    .bloc-page
+    {
+        width: 92%;
+        margin: auto;
+    } 
+    #section-hebergement
+    {
+        flex-direction: column-reverse;
+    }
+    #bloc-filtres
+    {
+        flex-wrap: nowrap;
+    }    
+    #hebergement-Marseille
+    {
+        width: 100%;
+        margin-top: 19px;
+    }
+    #Plus-populaire
+    {
+        width: 100%;
+        height: 415px;
+    } 
+    .cart-plus
+    {
+        justify-content: space-around;
+        width: 97%;
+    }  
+    .cart-hebergements
+    {
+        width: 88%;
+    }
+    #hebergement-Marseille h3
+    {
+        margin: 20px 8%;
+    }
+    .boite-des-photos
+    {
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;        
+    } 
+    .deuxphotos-bis
+    {
+        margin-top: 45px;
+    }
+    #afficher-h4
+    {
+        margin:10px auto;
+    }
+    .h3-lespluspopulaires
+    {
+        margin-left: 9%;
+        width: 304px;
+    }
+    .boiteh3-activites-Marseille
+    {
+        margin-left: 12%;        
+    }
+    .bloc-boite
+    {
+        width: 78%;
+        display: flex;
+        justify-content: center;
+    }
+    .boite
+    {
+        width: 90%;
+    }
+
+}
+/*------SMALL-------------------------------------------------------------------------------------------------------------*/
+/*Extra large devices (phone, 768px)*/
+@media all and (min-width:578px) and (max-width:768px)
+{
+    .bloc-page
+    {
+        width: 90%;
+        margin: auto;
+    } 
+    /*Section hebergement*/   
+    #hebergement-Marseille
+    {
+        width: 90%;
+        margin: auto; 
+        margin-bottom: 10px;             
+    }
+    #hebergement-Marseille h3
+    {
+        margin-left:7%;
+    }
+    /*Carte hebergement*/
+    /*boite des cartes*/
+    .cart-hebergements
+    {
+        width: 100%;
+    }
+    #afficher-h4
+    {
+        margin:10px auto;
+    }
+    #filtre_search
+    {
+        width: 90%;
+        margin: auto;
+    }
+    #section-hebergement
+    {
+        flex-direction: column-reverse;
+    }
+    #Plus-populaire
+    {
+        width: 90%;
+        margin: auto; 
+        margin-bottom: 40px;              
+    }
+    .h3-lespluspopulaires
+    {
+        width: 440px;
+        margin-left: 13%;
+    }
+    .cart-plus
+    {
+        width: 94%;
+        height: 510px;        
+        align-content: space-around;       
+    }
+    /* Carte 1*/
+    .contenant2
+    {
+        width: 450px;
+    }
+    .fig-2p .img-vignette-1p 
+    {
+        position: relative;
+        right: 237px;        
+    }
+    .fig-2p
+    {
+      width: 440px;
+    } 
+    /*Carte 2*/   
+    .img-vignette-2p
+    {
+        right: 236px;
+        width: auto;
+        height: 116%;
+    } 
+    /*Carte 3*/
+    .img-vignette-3p
+    {
+        right: 238px;
+        width: auto;
+        height: 224%;
+        bottom: 97px;
+    }
+    #logo-desktop
+    {
+        margin-left: 5%;
+    }
+    .filtre
+    {
+       display: flex;
+       width: 100%;
+       margin-bottom: 12px;
+       margin-left: -11px;
+    }
+    .bouton3
+    {
+        margin-right: 10px;
+    }
+    .bouton4
+    {
+        margin:10px 0px;
+    }    
+    .bouton1
+    {
+        margin:10px 0;
+    }  
+    .bouton3
+    {
+        margin:0 13px 0 0;
+    }
+    .boite-des-photos
+    {
+        flex-wrap: wrap;
+        width: 100%;        
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Activites-Marseille
+    {
+        width: 100%;
+    }
+    #bloc-filtres
+    {
+        width: 74%;
+    }
+    .deuxphotos-bis
+    {
+        margin-top: 30px;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 90%;
+        height: auto;
+    }
+    .boiteh3-activites-Marseille
+    {
+        margin-left: 11%;
+
+    }
+    /*Partie Activites à Marseille*/
+    .unephoto
+    {
+        width: 100%;
+    }   
+    .parc-port
+    {
+        width: 100%;
+        height: 280px;        
+    }
+    .img-parc-port
+    {
+        position: relative;
+        bottom: 101px;
+        left: 0;
+    }
+    .photo-1-fort
+    {
+        width: 222px;
+        height:186px;
+        position: relative;
+    }
+    .fort-fig
+    {
+        width: 250px;
+        height: 184px;
+    }
+    .img-fort-dame
+    {
+        width: auto;
+    }
+    .img-fort-dame2c
+    {
+        width: 274px;
+        height: auto;
+
+    }
+    .img-fort-dame3c
+    {
+        bottom: 9px;
+    }
+    .photo-2b
+    {
+        width: 232px;
+        height: 186px;
+        position: relative;
+    }
+    .fort-dame2b
+    {
+       width: 100%;
+    }    
+    .photo-1
+    {
+        width: 232px;
+        height: 186px;
+    }
+    .fort-dame
+    {
+        width: 100%;
+    }
+    .deuxphotos
+    {
+        margin: 30px auto;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        justify-content: space-around;        
+    }
+    .img-fort-dame
+    {
+        bottom: 115px;
+    }
+    .img-fort-dame2b
+    {
+        position: relative;
+        bottom: 0;
+        width: 125%;
+    }
+    .bloc-boite
+    {
+        width: 82%;
+        display: flex;
+        margin: auto;
+    }
+    .boite
+    {
+        width: 100%;
+    }
+
+    
+}
+/*------VERY SMALL-------------------------------------------------------------------------------------------------------------*/
+/*Extra large devices (phone, 587px)*/
+@media all and (max-width:577.98px)
+{
+    .bloc-page
+    {
+        width: 100%;
+    }
+    header
+    {
+        width: 100%;
+    }    
+    #hebergement
+    {
+      width: 92%;          
+    }      
+    #hebergement-Marseille
+    {
+        width: 100%;
+        margin: auto; 
+        margin-bottom: 10px;
+        border-radius: 0; 
+        background-color: white;                   
+    }    
+    #afficher-h4
+    {
+        margin:0 0 0 8%;
+    }
+    #filtre_search
+    {
+        width: 88%;     
+        margin: auto;   
+    }
+    #section-hebergement
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+    #Plus-populaire
+    {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;               
+    }
+    .cart-plus
+    {
+        width: 85%;
+    }    
+    .fig2
+    {
+      width: 400px;
+    }    
+    .img-vignette-5
+    {
+        position: relative;
+        right: 0;
+        width: 187px;
+    }
+    #logo-desktop
+    {
+        margin-left: 5%;
+    }
+    .filtre
+    {
+       display: flex;
+       width: 100%;
+       margin-bottom: 5px;
+       margin-left: -7px;
+    }
+    .bouton3
+    {
+        margin-right: 10px;
+    }
+    .bouton4
+    {
+        margin:10px 0px;
+    }    
+    .bouton1
+    {
+        margin:10px 0;
+    }  
+    .bouton3
+    {
+        margin:0 13px 0 0;
+    }
+    .boite-des-photos
+    {
+        flex-wrap: wrap;
+        width: 90%;        
+        margin: auto;  
+        justify-content: center;      
+    }
+    #Activites-Marseille
+    {
+        width: 98%;
+    }
+    #bloc-filtres
+    {
+        width: 100%;
+    }
+    #p500-logements
+    {
+        width: 86%;
+    }
+    .deuxphotos-bis
+    {
+        margin-top: 18px;
+    }
+    .boiteh3-activites-Marseille
+    {
+        margin-left: 6%;
+    }
+    .bouton2
+    {
+        margin-right: 10px;
+    }  
+    /*Carte "Iles du Frioul*/
+    .img-fort-dame2b
+    {
+        bottom: 10px;
+    }
+    .contenant1
+    {
+        width: 308px;
+    }
+    .img-vignette1
+    {
+        bottom: 45px;
+    }
+    .img-vignette
+    {
+        bottom: 122px;
+    }
+    .img-vignette4
+    {
+        bottom: 180px;
+    }
+    .unephoto
+    {
+        width: 308px;
+    }   
+    .parc-port
+    {
+        width: 308px;
+        height: 186px;
+        margin-top: 18px;
+    }
+    .img-parc-port
+    {
+        width: auto;
+        right: 0;
+        bottom: 39px;
+    }
+    .photo-1-fort
+    {
+        width: 308px;
+        height: 184px;
+    }
+    .fort-fig
+    {
+        width: 308px;
+        height: 184px;
+    }
+    .img-fort-dame
+    {
+        width: auto;
+    }
+    .photo-2b
+    {
+        width: 308px;
+        height: 184px;
+    }
+    .fort-dame2b
+    {
+       width: 100%;
+    }    
+    .photo-1
+    {
+        width: 308px;
+        height: 184px;
+    }
+    .fort-dame
+    {
+        width: 100%;
+    }
+    .deuxphotos
+    {
+        margin-top: 18px;
+    }
+    footer
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;  
+        padding-bottom: 24px;              
+    }
+    footer.propos
+    {
+        margin-top: 20px;
+    }
+    .propos,.nos-hebergements,.assistance
+    {
+        width: 90%;
+        margin: auto;
+    }
+    #navigation
+    {
+        display: none;
+    }
+    #logo-center
+    {
+        display: flex;
+        justify-content: center;     
+        margin-bottom: 40px;   
+    }
+    #logo3x
+    {
+        width: 100px;
+        height: auto;
+    }
+    #navigation-tel
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    nav
+    {
+        width: 100%;
+    }
+    li
+    {
+        padding: 0;
+    }
+    nav ul 
+    {
+        margin: 0;
+        display: flex;
+        width: 100%;
+
+    }
+    nav ul li 
+    {
+        padding: 0;
+    }
+    nav ul li .survole
+    {
+        padding: 0;
+    }
+    #menu-hebergement
+    {
+        display:flex;
+        width: 50%;
+        justify-content: center;
+        padding-bottom: 10px;        
+    }  
+    #menu-activites
+    {
+        display: flex;
+        width: 50%;        
+        justify-content: center;
+        padding-bottom: 10px;        
+    }  
+    .survole:hover  
+      {
+          border-top: none;          
+      }
+      #menu-hebergement:hover
+      {
+        border-bottom: 4px #0065fc solid;                           
+      }
+      #menu-hebergement:hover .survole
+      {
+          color: #0065fc;
+      }
+      #menu-activites:hover
+      {
+        border-bottom: 4px #0065fc solid;
+      }
+      #menu-activites:hover .survole
+      {
+          color: #0065fc;
+      }
+      .blue-search
+      {
+         display: none;
+      }
+      .blue-search-glass
+      {
+        height: 38px;
+        width: 38px;
+        background-color:#0065fc;
+        border-radius:10px;
+        position: absolute;
+        text-align: center;
+        left: 150px;
+        color: white;
+        padding: 10px;
+        left: 276px; 
+      }
+      .blue-search-glass ,.search i
+      {
+          display: flex;    
+          color: white;      
+      }
+      h1
+      {
+          font-size: 22px;
+      }
+      h2
+      {
+          font-size: 16px;
+      }
+      .search
+      {
+          width: 295px;
+      }
+      .delete-text
+      {
+          font-size: 16px;
+      }
+      #form-center
+      {
+          margin: auto 14px;
+      }
+      .h3-lespluspopulaires
+      {
+          margin-left: 9%;
+          width: 301px;
+      }
+      
+      .fig2 h4
+      {
+          width: 118px;
+      }
+      .bloc-boite
+      {
+          width: 93%;
+          margin: 35px auto auto auto;          
+      }
+      .boite
+      {
+          width: 90%;
+          flex-direction: column;          
+      }
+      
+    }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+

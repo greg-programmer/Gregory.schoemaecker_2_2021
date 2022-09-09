@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+         <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="style.css"/> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/d9331d8d10.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/logo/Booki-titre.png">
+        <title>Booki</title>
+    </head>
+
+    <body>
+        <!--Le bloque qui contient la page-->
+        <div class="bloc-page">
+
+            <header>
+                <!--La barre de navigation( téléphone)-->           
+                <div id="logo-center"><img id ="logo3x" src="Images/logo/Booki@3x.png" alt="le logo booki"></div>
+                    <div id="navigation-tel">
+                        <nav>
+                            <ul>
+                                <li id="menu-hebergement"><a class="survole" href="#section-hebergement">Hébergements</a></li>
+                                <li id="menu-activites"><a  class="survole" href="#Activites-Marseille">Activités</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--La barre de navigation( standard)-->
+                    <div id="navigation"><img id="logo-desktop" src="Images/logo/Booki.png" alt="le logo booki">
+                        <nav>
+                            <ul>
+                                <li><a class="survole" href="#section-hebergement">Hébergement</a></li>
+                                <li><a  class="survole" href="#Activites-Marseille">Activités</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+            </header>   
+
+            <!-- Section filtre -->
+            <section id="filtre_search">   
+                <!--Partie du titre et du sous-titre-->      
+                <div id ="hebergement">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>En plein centre ville ou en pleine nature</h2>
+                </div>
+
+                <!--La barre de recherche-->           
+                <div class="search">
+                    <div id="container-logo">
+                        <a href="#"><img id="logo-search" src="Images/logo/location.png" alt="logo Booki"></a>
+                    </div>
+                    <div id ="form-center">
+                        <form>
+                            <input class="delete-text" type ="text" placeholder="Marseille, France"> 
+                        </form>
+                    </div> 
+                    <a href="#" class="blue-search"><h4 id="h4-search">Rechercher</h4></a>
+                    <a href="#" class="blue-search-glass"><i class="fas fa-search"></i></a> <!--Display none en desktop-->
+                    </div>                      
+                <!--Le bloc qui contient les filtres-->  
+                <div id ="bloc-filtres">
+                    <!--Filtre-->     
+                    <div class="filtre">
+                        <h5 class="titre-filtre-0">Filtres</h5>
+                    </div>                 
+                    <!--Bouton1-->     
+                    <a href="#" class="bouton1">
+                    <div class ="rond-bleu">
+                        <i class="fas fa-money-bill-wave fa-1x"></i>
+                    </div>
+                    <h5 class="titre-filtre">Economique</h5>
+                    </a>
+                    <!--Bouton2-->                                                   
+                    <a href="#" class="bouton2">
+                    <div class ="rond-bleu">
+                        <i class="fas fa-child"></i>
+                        </div>
+                        <h5 class="titre-filtre">Familial</h5>
+                    </a>
+                    <!--Bouton3-->
+                    <a href="#" class="bouton3">
+                    <div class ="rond-bleu">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h5 class="titre-filtre">Romantique</h5>
+                    </a>
+                    <!--Bouton4-->
+                    <a href="#" class="bouton4">
+                    <div class ="rond-bleu">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <h5 class="titre-filtre">Animaux autorisés</h5>
+                    </a>
+                </div>
+                <!--Nombre de logements dispo-->
+                <div id ="plus-de-500">
+                    <i class="fas fa-info-circle"></i>
+                    <p id= "p500-logements">Plus de 500 logements sont disponibles dans cette ville<p>
+                </div>  
+            </section>  
+            <!--Le contenu principale-->
+            <!--Vignettes hébergement à Marseille-->
+                <section id="section-hebergement">
+                    <div id ="hebergement-Marseille">
+                        <h3>Hebergement à Marseille</h3>
+                        <div class="cart-hebergements" >                  
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr" target="_blank">
+                                    <figure>
+                                            <img class="img-vignette1" src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+                                            <figcaption class="fig-vignette-1">
+                                                <h4>Auberge La Cannebière</h4>
+                                                <p>Nuit à partir de 25<span>€</span></p>
+                                                <div class="start">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span>
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                </div>                                                        
+                                            </figcaption>                
+                                    </figure>
+                                    </a>                           
+                                </div>
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr " target="blank">
+                                    <figure>
+                                            <img class="img-vignette1" src="Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                                            <figcaption class="fig-vignette-1">
+                                                        <h4>Hôtel du port</h4>
+                                                        <p>Nuit à partir de 52<span>€</span></p>
+                                                        <div class="start">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>                                                        
+                                            </figcaption>                
+                                    </figure>
+                                    </a>                           
+                                </div>
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr" target="blank">
+                                    <figure>
+                                            <img class="img-vignette1" src="Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel des mouettes">
+                                            <figcaption class="fig-vignette-1">
+                                                <h4>Hôtel Les mouettes</h4>
+                                                <p>Nuit à partir de 76<span>€</span></p>
+                                                <div class="start">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span>
+                                                        <i class="fas fa-star"></i>
+                                                </span>
+                                                </div>                                                        
+                                            </figcaption>                
+                                    </figure>
+                                    </a>                           
+                                </div>
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr" target="blank">
+                                        <figure>
+                                                <img class="img-vignette" src="Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                                                <figcaption class="fig-vignette-1">
+                                                    <h4>Hôtel de la mer</h4>
+                                                    <p>Nuit à partir de 46<span>€</span></p>
+                                                    <div class="start">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                    </span>
+                                                    </div>                                                        
+                                                </figcaption>                
+                                        </figure>
+                                    </a>                           
+                                </div>
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr" target="blank">
+                                        <figure>
+                                                <img class="img-vignette-2" src="Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                                                <figcaption class="fig-vignette-1">
+                                                    <h4>Auberge Le Panier</h4>
+                                                    <p>Nuit à partir de 23<span>€</span></p>
+                                                    <div class="start">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span>
+                                                            <i class="fas fa-star"></i>
+                                                    </span>
+                                                    </div>                                                        
+                                                </figcaption>                
+                                        </figure>
+                                    </a>                           
+                                </div>
+                                <div class="contenant1">
+                                    <a href="http://www.google.fr" target="blank">
+                                        <figure>
+                                                <img class="img-vignette4" src="Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplashm.jpg" alt="Hôtel chez Amina">
+                                                <figcaption class="fig-vignette-1" >
+                                                    <h4>Hôtel chez Amina</h4>
+                                                    <p>Nuit à partir de 96<span>€</span></p>
+                                                    <div class="start">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>                                                        
+                                                </figcaption>                
+                                        </figure>
+                                    </a>  
+                                </div>                        
+                        </div>
+                            <a class="lien2" href="#">
+                                <h4 id="afficher-h4">Afficher Plus</h4>                               
+                            </a>                            
+                    </div>
+
+                    <!--Vignettes "Les plus populaires" --> 
+                    <aside id="Plus-populaire">
+                        <div class="h3-lespluspopulaires">
+                            <h3>Les plus populaires</h3>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                                <div class="cart-plus" > 
+                                    <div class="contenant2">
+                                        <a href="http://www.google.fr" target="blank">
+                                            <figure class="fig-2p">
+                                                    <img class="img-vignette-1p" src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                                                    <figcaption class="fig-vignette-1p">
+                                                        <h4 class="h4-p">Hôtel Le soleil du matin</h4>
+                                                        <p class="p-p">Nuit à partir de 128<span>€</span></p>
+                                                        <div class="start-decal">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>                                                        
+                                                    </figcaption>                
+                                            </figure>
+                                        </a>                           
+                                    </div>   
+                                    <div class="contenant2">
+                                        <a href="http://www.google.fr" target="blank">
+                                            <figure class="fig-2p">
+                                                    <img class="img-vignette-2p" src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                                                    <figcaption class="fig-vignette-1p">
+                                                        <h4 class="h4-p">Au coeur de l'eau Chambres d'hôtes</h4>
+                                                        <p class="p-p">Nuit à partir de 71<span>€</span></p>
+                                                        <div class="start-decal">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <span>
+                                                                <i class="fas fa-star"></i>
+                                                            </span>    
+                                                        </div>                                                        
+                                                    </figcaption>                
+                                            </figure>
+                                        </a>                           
+                                    </div>
+                                    <div class="contenant2">
+                                        <a href="http://www.google.fr" target="blank">
+                                            <figure class="fig-2p">
+                                                    <img class="img-vignette-3p" src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                                                    <figcaption class="fig-vignette-1p">
+                                                        <h4 class="h4-p">Hôtel Tout bleu et Blanc</h4>
+                                                        <p class="p-p">Nuit à partir de 68<span>€</span></p>
+                                                        <div class="start-decal">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <span class="invisible">
+                                                                <i class="fas fa-star"></i>
+                                                            </span>     
+                                                        </div>                                                        
+                                                    </figcaption>                
+                                            </figure>
+                                        </a>                           
+                                    </div>                                                           
+                            </div>                                                              
+                    </aside>
+                </section>  
+                <!--La section des activités-->
+                <section id="Activites-Marseille">
+                        <div class="boiteh3-activites-Marseille">
+                            <h3 class="h3-activites-Marseille">Activités à Marseille</h3>
+                            </div>
+                            <div class="boite-des-photos">
+                                <a href="http://www.google.fr" target="_blank">
+                                <div class="unephoto">
+                                        <figure class="parc-port">
+                                                <img class="img-parc-port" src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                                alt="Le vieux Port de Marseille"/>
+                                                <figcaption class="fig-parc-port">
+                                                        <h4 class="h4-figcaption">Vieux Port</h4>
+                                                </figcaption>
+                                        </figure>
+                                </div>
+                                </a>   
+                                    <div class="deuxphotos">
+                                        <a href="http://www.google.fr" target="_blank">   
+                                        <div class="photo-1-fort">
+                                            <figure class="fort-fig">
+                                                    <img class="img-fort-dame" src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash-retouche.jpg"
+                                                    alt="Fort de Pomègues">
+                                                        <figcaption class="fig-parc-port">
+                                                                    <h4 class="h4-figcaption">Fort de Pomègues</h4> 
+                                                        </figcaption>
+                                            </figure>
+                                        </div>
+                                        </a>
+                                        <a href="http://www.google.fr" target="_blank">
+                                            <div class ="photo-2b">
+                                                <figure class="fort-dame2b">
+                                                        <img class="img-fort-dame2b" src="Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash_retouche.jpg "
+                                                        alt="Iles du Frioul">
+                                                            <figcaption class="fig-parc-port">
+                                                                        <h4 class="h4-figcaption">îles du Frioul</h4> 
+                                                            </figcaption>
+                                                </figure>
+                                            </div> 
+                                        </a>    
+                                </div>
+                                        <a href="http://www.google.fr" target="_blank">
+                                            <div class="unephoto">
+                                                <figure class="parc-port">
+                                                            <img class="img-parc-port" src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                                            alt="Parc national des Calanques"/>
+                                                            <figcaption class="fig-parc-port">
+                                                                    <h4 class="h4-figcaption">Parc national des Calanques</h4>
+                                                            </figcaption>
+                                                </figure>
+                                            </div>     
+                                        </a> 
+                                            <div class="deuxphotos-bis">
+                                                <a href="http://www.google.fr" target="_blank">  
+                                                    <div class="photo-1">
+                                                        <figure class="fort-dame">
+                                                            <img class="img-fort-dame2c" src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash-retouche.jpg"
+                                                            alt="Notre Dame de la Garde">
+                                                            <figcaption class="fig-parc-port">
+                                                                        <h4 class="h4-figcaption">Notre-Dame-de-la-Garde</h4> 
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </a>    
+                                                <a href="http://www.google.fr" target="_blank">
+                                                    <div class="photo-1">
+                                                        <figure class="fort-dame">
+                                                                <img class="img-fort-dame3c" src="Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash-retouche.jpg "
+                                                                alt="Parc Longchamp">
+                                                                <figcaption class="fig-parc-port">
+                                                                            <h4 class="h4-figcaption">Parc Longchamp</h4> 
+                                                                </figcaption>
+                                                        </figure>
+                                                    </div> 
+                                                </a> 
+                                            </div>
+                            </div>                                                      
+                    </section>                         
+        </div>
+                <!--La partie du footer-->
+                    <footer>
+                           <div class="bloc-boite">     
+                                <div class="boite">    
+                                    <div class="propos">
+                                            <h4 class="h4-propos">A propos</h4><br/>
+                                            <p>Fonctionnement du site</p>
+                                            <p>Conditions générales de vente</p>
+                                            <p>Données et confidentialité</p>  
+                                        </div>
+                                        <div class="nos-hebergements">
+                                            <h4>Nos hébergements</h4><br/>
+                                            <p>Charte qualité</p>
+                                            <p>Soumette votre hôtel</p>
+                                        </div>
+                                        <div class="assistance">
+                                            <h4>Assistance</h4><br/>
+                                            <p>Centre d'aide</p>
+                                            <p>Nous contacter</p>
+                                        </div>
+                                </div>   
+                            </div>         
+                    </footer>      
+        </body>
+</html>
